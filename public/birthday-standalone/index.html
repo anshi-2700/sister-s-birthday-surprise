@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Happy Birthday Didi! 🎂💕</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Login Page -->
+  <div id="login-page" class="page gradient-bg">
+    <div class="floating-hearts" id="floating-hearts"></div>
+    
+    <div class="login-container fade-in">
+      <div class="gift-icon heart-beat">
+        <svg class="gift-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 12v10H4V12M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+        </svg>
+        <span class="sparkle">✨</span>
+      </div>
+      
+      <div class="welcome-text">
+        <h1 class="script-font">Hey Didi! 💝</h1>
+        <p>There's something special waiting for you...</p>
+      </div>
+      
+      <form id="login-form" class="login-form">
+        <div class="input-wrapper" id="input-wrapper">
+          <svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+          <input type="password" id="password" placeholder="Enter the magic word..." required>
+        </div>
+        <p id="error-msg" class="error-msg"></p>
+        <button type="submit" class="submit-btn gradient-button">
+          <span>Open My Surprise</span>
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </button>
+      </form>
+      
+      <p class="hint">Hint: What do I call you? 🤫</p>
+    </div>
+  </div>
+
+  <!-- Birthday Page -->
+  <div id="birthday-page" class="page gradient-bg hidden">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="confetti" id="confetti"></div>
+      <div class="hero-content fade-in">
+        <p class="hero-subtitle">✨ A Special Day for a Special Person ✨</p>
+        <h1 class="hero-title script-font">Happy Birthday</h1>
+        <h2 class="hero-name script-font">Didi! 🎂</h2>
+        <div class="hero-hearts">💕</div>
+      </div>
+    </section>
+
+    <!-- Quotes Section -->
+    <section class="quotes-section">
+      <h2 class="section-title script-font">Words From My Heart 💌</h2>
+      <div class="quotes-scroll">
+        <div class="quote-card">
+          <p>"A sister is both your mirror and your opposite."</p>
+        </div>
+        <div class="quote-card">
+          <p>"Sisters are different flowers from the same garden."</p>
+        </div>
+        <div class="quote-card">
+          <p>"Having a sister means having a best friend for life."</p>
+        </div>
+        <div class="quote-card">
+          <p>"Sisters make the best friends in the world."</p>
+        </div>
+        <div class="quote-card">
+          <p>"A sister's love is forever and unconditional."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reasons Section -->
+    <section class="reasons-section">
+      <h2 class="section-title script-font">23 Reasons Why You're Amazing 💝</h2>
+      <p class="section-subtitle">Tap each card to reveal a special memory!</p>
+      <div class="reasons-grid" id="reasons-grid"></div>
+    </section>
+
+    <!-- Final Message -->
+    <section class="final-section">
+      <div class="final-content fade-in">
+        <h2 class="script-font">Thank You for Being You 💕</h2>
+        <p>Every moment with you is a blessing. You've been my guide, my friend, and my biggest supporter. On your special day, I want you to know how much you mean to me.</p>
+        <p class="signature script-font">With all my love,<br>Your Little One 💝</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
